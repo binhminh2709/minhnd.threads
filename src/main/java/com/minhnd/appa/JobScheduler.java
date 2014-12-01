@@ -32,6 +32,7 @@ package com.minhnd.appa;
 import java.util.*;
 
 public class JobScheduler implements Runnable {
+	
 	final public static int		ONCE		= 1;
 	final public static int		FOREVER	= -1;
 	final public static long	HOURLY	= (long) 60 * 60 * 1000;

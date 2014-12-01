@@ -5,6 +5,7 @@ import java.util.*;
 import com.minhnd.ch02.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
+	
 	static char[]					chars;
 	static String					charArray	= "abcdefghijklmnopqrstuvwxyz0123456789";
 	static {

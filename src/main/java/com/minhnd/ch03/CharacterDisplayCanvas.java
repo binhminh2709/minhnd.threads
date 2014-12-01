@@ -4,6 +4,10 @@ import java.awt.*;
 import javax.swing.*;
 
 public class CharacterDisplayCanvas extends JComponent implements CharacterListener {
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
 	protected FontMetrics	fm;
 	protected char[]			tmpChar	= new char[1];
 	protected int					fontHeight;

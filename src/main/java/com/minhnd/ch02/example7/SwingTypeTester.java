@@ -9,6 +9,10 @@ import com.minhnd.ch02.*;
 
 public class SwingTypeTester extends JFrame implements CharacterSource {
 	
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= -3422487377989612404L;
 	protected RandomCharacterGenerator			producer;
 	private AnimatedCharacterDisplayCanvas	displayCanvas;
 	private CharacterDisplayCanvas					feedbackCanvas;
@@ -25,16 +29,13 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
 		handler = new CharacterEventHandler();
 		displayCanvas = new AnimatedCharacterDisplayCanvas();
 		feedbackCanvas = new CharacterDisplayCanvas(this);
-		quitButton = new JButton();
-		startButton = new JButton();
-		stopButton = new JButton();
+		quitButton = new JButton("Quit");
+		startButton = new JButton("Start");
+		stopButton = new JButton("Stop");
 		add(displayCanvas, BorderLayout.NORTH);
 		add(feedbackCanvas, BorderLayout.CENTER);
 		JPanel p = new JPanel();
-		startButton.setLabel("Start");
-		stopButton.setLabel("Stop");
 		stopButton.setEnabled(false);
-		quitButton.setLabel("Quit");
 		p.add(startButton);
 		p.add(stopButton);
 		p.add(quitButton);

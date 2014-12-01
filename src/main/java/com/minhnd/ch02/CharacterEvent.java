@@ -1,6 +1,7 @@
 package com.minhnd.ch02;
 
 public class CharacterEvent {
+	
 	public CharacterSource	source;
 	public int							character;
 	

@@ -3,6 +3,7 @@ package com.minhnd.ch02;
 import java.util.*;
 
 public class CharacterEventHandler {
+	
 	private Vector	listeners	= new Vector();
 	
 	public void addCharacterListener(CharacterListener cl) {

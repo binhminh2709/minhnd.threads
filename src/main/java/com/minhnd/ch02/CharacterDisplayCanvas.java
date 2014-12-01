@@ -4,6 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class CharacterDisplayCanvas extends JComponent implements CharacterListener {
+	
 	protected FontMetrics	fm;
 	protected char[]			tmpChar	= new char[1];
 	protected int					fontHeight;
