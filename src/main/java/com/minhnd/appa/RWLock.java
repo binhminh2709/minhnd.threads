@@ -32,11 +32,11 @@ package com.minhnd.appa;
 import java.util.*;
 
 class RWNode {
-	static final int READER = 0;
-	static final int WRITER = 1;
-	Thread t;
-	int state;
-	int nAcquires;
+	static final int	READER	= 0;
+	static final int	WRITER	= 1;
+	Thread						t;
+	int								state;
+	int								nAcquires;
 	
 	RWNode(Thread t, int state) {
 		this.t = t;
@@ -46,7 +46,7 @@ class RWNode {
 }
 
 public class RWLock {
-	private Vector waiters;
+	private Vector	waiters;
 	
 	private int firstWriter() {
 		Enumeration e;

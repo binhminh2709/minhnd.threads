@@ -11,8 +11,8 @@ import java.util.concurrent.locks.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements ActionListener, CharacterListener {
 	
-	private int curX;
-	private Timer timer;
+	private int		curX;
+	private Timer	timer;
 	
 	public AnimatedCharacterDisplayCanvas(CharacterSource cs) {
 		super(cs);

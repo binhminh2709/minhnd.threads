@@ -3,8 +3,8 @@ package com.minhnd.ch15.example10;
 import com.minhnd.ch15.*;
 
 public class LoopInterchanged implements ScaleTester {
-	private float lookupValues[][];
-	private int nRows, nCols, nThreads;
+	private float	lookupValues[][];
+	private int		nRows, nCols, nThreads;
 	
 	private class LoopInterchangedHandler extends PoolLoopHandler {
 		LoopInterchangedHandler(int nc, int nt) {

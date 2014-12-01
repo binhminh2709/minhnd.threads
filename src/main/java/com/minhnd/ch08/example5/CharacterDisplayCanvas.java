@@ -4,9 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CharacterDisplayCanvas extends JComponent implements CharacterListener {
-	protected FontMetrics fm;
-	protected char[] tmpChar = new char[1];
-	protected int fontHeight;
+	protected FontMetrics	fm;
+	protected char[]			tmpChar	= new char[1];
+	protected int					fontHeight;
 	
 	public CharacterDisplayCanvas(CharacterSource cs) {
 		setFont(new Font("Monospaced", Font.BOLD, 18));

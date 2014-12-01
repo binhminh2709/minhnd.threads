@@ -9,10 +9,10 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
 public class ScoreLabel extends JLabel implements CharacterListener {
-	private AtomicInteger score = new AtomicInteger(0);
-	private AtomicInteger char2type = new AtomicInteger(-1);
-	private AtomicReference<CharacterSource> generator = null;
-	private AtomicReference<CharacterSource> typist = null;
+	private AtomicInteger											score			= new AtomicInteger(0);
+	private AtomicInteger											char2type	= new AtomicInteger(-1);
+	private AtomicReference<CharacterSource>	generator	= null;
+	private AtomicReference<CharacterSource>	typist		= null;
 	
 	public ScoreLabel(CharacterSource generator, CharacterSource typist) {
 		this.generator = new AtomicReference(generator);

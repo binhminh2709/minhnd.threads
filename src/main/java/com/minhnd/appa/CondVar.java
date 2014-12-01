@@ -30,7 +30,7 @@
 package com.minhnd.appa;
 
 public class CondVar {
-	private BusyFlag SyncVar;
+	private BusyFlag	SyncVar;
 	
 	public CondVar() {
 		this(new BusyFlag());

@@ -3,8 +3,8 @@ package com.minhnd.ch15.example10;
 import com.minhnd.ch15.*;
 
 public class GuidedLoopInterchanged implements ScaleTester {
-	private float lookupValues[][];
-	private int nRows, nCols, nThreads;
+	private float	lookupValues[][];
+	private int		nRows, nCols, nThreads;
 	
 	private class GuidedLoopInterchangedHandler extends GuidedLoopHandler {
 		GuidedLoopInterchangedHandler(int nc, int nt) {

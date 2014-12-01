@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 public class PoolLoopHandler implements Runnable {
 	protected static class LoopRange {
-		public int start, end;
+		public int	start, end;
 	}
 	
 	protected static class PoolHandlerFactory implements ThreadFactory {
@@ -15,9 +15,9 @@ public class PoolLoopHandler implements Runnable {
 		}
 	}
 	
-	static protected ThreadPoolExecutor threadpool;
-	static protected int maxThreads = 1;
-	protected int startLoop, endLoop, curLoop, numThreads;
+	static protected ThreadPoolExecutor	threadpool;
+	static protected int								maxThreads	= 1;
+	protected int												startLoop, endLoop, curLoop, numThreads;
 	
 	synchronized static void getThreadPool(int threads) {
 		if (threadpool == null)

@@ -5,11 +5,11 @@ import java.text.*;
 import java.io.*;
 
 public class ScaleTest {
-	private int nIter = 200;
-	private int nRows = 2000;
-	private int nCols = 200;
-	private int nThreads = 8;
-	Class target;
+	private int	nIter			= 200;
+	private int	nRows			= 2000;
+	private int	nCols			= 200;
+	private int	nThreads	= 8;
+	Class				target;
 	
 	ScaleTest(int nIter, int nRows, int nCols, int nThreads, String className) {
 		this.nIter = nIter;

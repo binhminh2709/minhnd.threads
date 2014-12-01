@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class Fibonacci {
-	private ConcurrentMap<Integer, Integer> values = new ConcurrentHashMap<Integer, Integer>();
+	private ConcurrentMap<Integer, Integer>	values	= new ConcurrentHashMap<Integer, Integer>();
 	
 	public int calculate(int x) {
 		if (x < 0)

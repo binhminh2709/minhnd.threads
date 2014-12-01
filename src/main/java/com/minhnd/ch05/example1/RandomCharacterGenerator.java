@@ -7,17 +7,17 @@ import java.util.concurrent.locks.*;
 import com.minhnd.ch05.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
-	private static char[] chars;
-	private static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
+	private static char[]					chars;
+	private static String					charArray	= "abcdefghijklmnopqrstuvwxyz0123456789";
 	static {
 		chars = charArray.toCharArray();
 	}
 	
-	private Random random;
-	private CharacterEventHandler handler;
-	private boolean done = true;
-	private Lock lock = new ReentrantLock();
-	private Condition cv = lock.newCondition();
+	private Random								random;
+	private CharacterEventHandler	handler;
+	private boolean								done			= true;
+	private Lock									lock			= new ReentrantLock();
+	private Condition							cv				= lock.newCondition();
 	
 	public RandomCharacterGenerator() {
 		random = new Random();

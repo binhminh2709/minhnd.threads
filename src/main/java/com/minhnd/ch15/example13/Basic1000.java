@@ -6,9 +6,9 @@ import java.io.*;
 import com.minhnd.ch15.*;
 
 public class Basic1000 implements ScaleTester {
-	private float lookupValues[][];
-	int nCols, nRows;
-	PrintStream devnull;
+	private float	lookupValues[][];
+	int						nCols, nRows;
+	PrintStream		devnull;
 	
 	public void init(int nRows, int nCols, int nThreads) {
 		this.nCols = nCols;

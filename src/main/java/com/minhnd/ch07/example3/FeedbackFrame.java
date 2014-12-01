@@ -7,13 +7,13 @@ import javax.swing.*;
 
 public class FeedbackFrame extends JFrame implements Runnable {
 	
-	private SwingTypeTester stt;
-	private Thread t;
-	private JLabel label;
-	private int state;
+	private SwingTypeTester	stt;
+	private Thread					t;
+	private JLabel					label;
+	private int							state;
 	
-	static String[] stateMessages = { "Connecting to server...", "Logging into server...", "Waiting for data...",
-			"Complete" };
+	static String[]					stateMessages	= { "Connecting to server...", "Logging into server...", "Waiting for data...",
+			"Complete"												};
 	
 	public FeedbackFrame(SwingTypeTester stt) {
 		this.stt = stt;

@@ -9,14 +9,14 @@ import com.minhnd.ch02.*;
 
 public class SwingTypeTester extends JFrame implements CharacterSource {
 	
-	protected RandomCharacterGenerator producer;
-	private CharacterDisplayCanvas displayCanvas;
-	private CharacterDisplayCanvas feedbackCanvas;
-	private JButton quitButton;
-	private JButton startButton;
-	private JButton stopButton;
-	private CharacterEventHandler handler;
-	private Thread displayThread;
+	protected RandomCharacterGenerator	producer;
+	private CharacterDisplayCanvas			displayCanvas;
+	private CharacterDisplayCanvas			feedbackCanvas;
+	private JButton											quitButton;
+	private JButton											startButton;
+	private JButton											stopButton;
+	private CharacterEventHandler				handler;
+	private Thread											displayThread;
 	
 	public SwingTypeTester() {
 		initComponents();

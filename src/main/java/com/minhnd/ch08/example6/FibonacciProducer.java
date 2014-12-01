@@ -4,8 +4,8 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class FibonacciProducer implements Runnable {
-	private Thread thr;
-	private BlockingQueue<Integer> queue;
+	private Thread									thr;
+	private BlockingQueue<Integer>	queue;
 	
 	public FibonacciProducer(BlockingQueue<Integer> q) {
 		queue = q;

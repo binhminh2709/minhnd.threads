@@ -30,7 +30,7 @@
 package com.minhnd.appa;
 
 public class DaemonLock implements Runnable {
-	private int lockCount = 0;
+	private int	lockCount	= 0;
 	
 	public synchronized void acquire() {
 		if (lockCount++ == 0) {

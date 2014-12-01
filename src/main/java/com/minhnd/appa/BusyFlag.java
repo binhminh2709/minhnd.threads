@@ -30,8 +30,8 @@
 package com.minhnd.appa;
 
 public class BusyFlag {
-	protected Thread busyflag = null;
-	protected int busycount = 0;
+	protected Thread	busyflag	= null;
+	protected int			busycount	= 0;
 	
 	public synchronized void getBusyFlag() {
 		while (tryGetBusyFlag() == false) {

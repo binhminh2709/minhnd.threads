@@ -3,9 +3,9 @@ package com.minhnd.ch15.example11;
 import com.minhnd.ch15.*;
 
 public class Basic implements ScaleTester {
-	private float lookupValues[][];
-	int nCols, nRows;
-	float sumValue;
+	private float	lookupValues[][];
+	int						nCols, nRows;
+	float					sumValue;
 	
 	public void init(int nRows, int nCols, int nThreads) {
 		this.nCols = nCols;

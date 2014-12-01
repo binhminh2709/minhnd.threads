@@ -9,12 +9,12 @@ import com.minhnd.ch12.*;
 
 public class CalcServer extends TCPNIOServer {
 	
-	static ThreadPoolExecutor pool;
+	static ThreadPoolExecutor	pool;
 	
 	class FibClass implements Runnable {
-		long n;
-		SocketChannel clientChannel;
-		ByteBuffer buffer = ByteBuffer.allocateDirect(8);
+		long					n;
+		SocketChannel	clientChannel;
+		ByteBuffer		buffer	= ByteBuffer.allocateDirect(8);
 		
 		FibClass(long n, SocketChannel sc) {
 			this.n = n;

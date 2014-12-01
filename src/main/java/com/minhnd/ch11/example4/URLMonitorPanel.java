@@ -15,14 +15,14 @@ class TimeoutTask implements Callable {
 
 public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
 	
-	static Future<Integer> futureTaskResult;
-	static volatile boolean done = false;
-	ScheduledThreadPoolExecutor executor;
-	ScheduledFuture cancellable;
-	URL url;
-	URLPingTask task;
-	JPanel status;
-	JButton startButton, stopButton;
+	static Future<Integer>			futureTaskResult;
+	static volatile boolean			done	= false;
+	ScheduledThreadPoolExecutor	executor;
+	ScheduledFuture							cancellable;
+	URL													url;
+	URLPingTask									task;
+	JPanel											status;
+	JButton											startButton, stopButton;
 	
 	public URLMonitorPanel(String url, ScheduledThreadPoolExecutor se) throws MalformedURLException {
 		setLayout(new BorderLayout());

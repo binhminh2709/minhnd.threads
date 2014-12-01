@@ -3,8 +3,8 @@ package com.minhnd.ch15.example7;
 import com.minhnd.ch15.*;
 
 public class SinTable extends GuidedLoopHandler {
-	private float lookupValues[];
-	public float sumValues[];
+	private float	lookupValues[];
+	public float	sumValues[];
 	
 	public SinTable() {
 		super(0, 360 * 100, 100, 12);

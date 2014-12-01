@@ -8,8 +8,8 @@ public class URLPingTask implements Runnable {
 		public void isAlive(boolean b);
 	}
 	
-	URL url;
-	URLUpdate uu;
+	URL				url;
+	URLUpdate	uu;
 	
 	public URLPingTask(URL url) {
 		this(url, null);

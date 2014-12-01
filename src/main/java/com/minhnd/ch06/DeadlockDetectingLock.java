@@ -14,7 +14,7 @@ public class DeadlockDetectingLock extends ReentrantLock {
 	// This array is not thread safe, and must be externally synchronized
 	//    by the class lock. Hence, it should only be called by static
 	//    methods.
-	private static List deadlockLocksRegistry = new ArrayList();
+	private static List	deadlockLocksRegistry	= new ArrayList();
 	
 	private static synchronized void registerLock(DeadlockDetectingLock ddl) {
 		if (!deadlockLocksRegistry.contains(ddl))
@@ -30,7 +30,7 @@ public class DeadlockDetectingLock extends ReentrantLock {
 	// This array is not thread safe, and must be externally synchronized
 	//    by the class lock. Hence, it should only be called by static
 	//    methods.
-	private List hardwaitingThreads = new ArrayList();
+	private List	hardwaitingThreads	= new ArrayList();
 	
 	private static synchronized void markAsHardwait(List l, Thread t) {
 		if (!l.contains(t))
@@ -104,7 +104,7 @@ public class DeadlockDetectingLock extends ReentrantLock {
 		this(fair, false);
 	}
 	
-	private boolean debugging;
+	private boolean	debugging;
 	
 	public DeadlockDetectingLock(boolean fair, boolean debug) {
 		super(fair);
@@ -168,7 +168,7 @@ public class DeadlockDetectingLock extends ReentrantLock {
 	//      first. It is not possible to create a new deadlock just by releasing
 	//      locks.
 	public class DeadlockDetectingCondition implements Condition {
-		Condition embedded;
+		Condition	embedded;
 		
 		protected DeadlockDetectingCondition(ReentrantLock lock, Condition embedded) {
 			this.embedded = embedded;
@@ -237,12 +237,12 @@ public class DeadlockDetectingLock extends ReentrantLock {
 	// Testing routines here
 	//
 	// These are very simple tests -- more tests will have to be written
-	private static Lock a = new DeadlockDetectingLock(false, true);
-	private static Lock b = new DeadlockDetectingLock(false, true);
-	private static Lock c = new DeadlockDetectingLock(false, true);
-	private static Condition wa = a.newCondition();
-	private static Condition wb = b.newCondition();
-	private static Condition wc = c.newCondition();
+	private static Lock				a		= new DeadlockDetectingLock(false, true);
+	private static Lock				b		= new DeadlockDetectingLock(false, true);
+	private static Lock				c		= new DeadlockDetectingLock(false, true);
+	private static Condition	wa	= a.newCondition();
+	private static Condition	wb	= b.newCondition();
+	private static Condition	wc	= c.newCondition();
 	
 	private static void delaySeconds(int seconds) {
 		try {

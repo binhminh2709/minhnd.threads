@@ -1,7 +1,7 @@
 package com.minhnd.ch15;
 
 public class GuidedLoopHandler extends PoolLoopHandler {
-	protected int minSize;
+	protected int	minSize;
 	
 	public GuidedLoopHandler(int start, int end, int min, int threads) {
 		super(start, end, threads);

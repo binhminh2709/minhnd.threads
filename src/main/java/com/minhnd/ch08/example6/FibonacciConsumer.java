@@ -3,9 +3,9 @@ package com.minhnd.ch08.example6;
 import java.util.concurrent.*;
 
 public class FibonacciConsumer implements Runnable {
-	private Fibonacci fib = new Fibonacci();
-	private Thread thr;
-	private BlockingQueue<Integer> queue;
+	private Fibonacci								fib	= new Fibonacci();
+	private Thread									thr;
+	private BlockingQueue<Integer>	queue;
 	
 	public FibonacciConsumer(BlockingQueue<Integer> q) {
 		queue = q;

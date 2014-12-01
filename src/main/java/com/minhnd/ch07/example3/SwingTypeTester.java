@@ -9,15 +9,15 @@ import java.awt.event.*;
 
 public class SwingTypeTester extends JFrame implements CharacterSource {
 	
-	protected RandomCharacterGenerator producer;
-	private AnimatedCharacterDisplayCanvas displayCanvas;
-	private CharacterDisplayCanvas feedbackCanvas;
-	private JButton quitButton;
-	private JButton startButton;
-	private JButton stopButton;
-	private CharacterEventHandler handler;
-	private ScoreLabel score;
-	private SwingTypeTester parent;
+	protected RandomCharacterGenerator			producer;
+	private AnimatedCharacterDisplayCanvas	displayCanvas;
+	private CharacterDisplayCanvas					feedbackCanvas;
+	private JButton													quitButton;
+	private JButton													startButton;
+	private JButton													stopButton;
+	private CharacterEventHandler						handler;
+	private ScoreLabel											score;
+	private SwingTypeTester									parent;
 	
 	public SwingTypeTester() {
 		initComponents();

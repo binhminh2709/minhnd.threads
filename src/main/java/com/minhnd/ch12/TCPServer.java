@@ -4,11 +4,11 @@ import java.net.*;
 import java.io.*;
 
 public class TCPServer implements Cloneable, Runnable {
-	Thread runner = null;
-	ServerSocket server = null;
-	Socket data = null;
+	Thread					runner	= null;
+	ServerSocket		server	= null;
+	Socket					data		= null;
 	
-	private boolean done = false;
+	private boolean	done		= false;
 	
 	public synchronized void startServer(int port) throws IOException {
 		if (runner == null) {

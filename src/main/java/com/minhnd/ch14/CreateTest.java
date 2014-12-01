@@ -4,10 +4,10 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
 public class CreateTest extends Thread {
-	static AtomicInteger nCalls;
-	static int target = 0;
-	static boolean done = false;
-	static Object lock = new Object();
+	static AtomicInteger	nCalls;
+	static int						target	= 0;
+	static boolean				done		= false;
+	static Object					lock		= new Object();
 	
 	public static void main(String[] args) {
 		

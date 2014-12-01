@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.*;
 
 public class AtomicScoreAndCharacter {
 	public class ScoreAndCharacter {
-		private int score, char2type;
+		private int	score, char2type;
 		
 		public ScoreAndCharacter(int score, int char2type) {
 			this.score = score;
@@ -20,7 +20,7 @@ public class AtomicScoreAndCharacter {
 		}
 	}
 	
-	private AtomicReference<ScoreAndCharacter> value;
+	private AtomicReference<ScoreAndCharacter>	value;
 	
 	public AtomicScoreAndCharacter() {
 		this(0, -1);

@@ -4,10 +4,10 @@ import java.util.concurrent.*;
 
 public class Timestamp {
 	
-	private long startTime;
-	private long stopTime;
-	private boolean stopped = false;
-	private TimeUnit ts;
+	private long			startTime;
+	private long			stopTime;
+	private boolean		stopped	= false;
+	private TimeUnit	ts;
 	
 	public Timestamp() {
 		this(TimeUnit.NANOSECONDS);

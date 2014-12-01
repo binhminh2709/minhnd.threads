@@ -11,11 +11,11 @@ import java.util.concurrent.locks.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
 	
-	private boolean done = true;
-	private int curX = 0;
-	private Lock lock = new ReentrantLock();
-	private Condition cv = lock.newCondition();
-	private Thread timer = null;
+	private boolean		done	= true;
+	private int				curX	= 0;
+	private Lock			lock	= new ReentrantLock();
+	private Condition	cv		= lock.newCondition();
+	private Thread		timer	= null;
 	
 	public AnimatedCharacterDisplayCanvas() {
 	}

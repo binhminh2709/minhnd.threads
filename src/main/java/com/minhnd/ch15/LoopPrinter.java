@@ -4,8 +4,8 @@ import java.util.*;
 import java.io.*;
 
 public class LoopPrinter {
-	private Vector pStorage[];
-	private int growSize;
+	private Vector	pStorage[];
+	private int			growSize;
 	
 	public LoopPrinter(int initSize, int growSize) {
 		pStorage = new Vector[initSize];

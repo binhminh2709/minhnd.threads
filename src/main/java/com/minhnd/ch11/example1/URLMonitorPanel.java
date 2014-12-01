@@ -8,11 +8,11 @@ import java.util.Timer;
 
 public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
 	
-	Timer timer;
-	URL url;
-	URLPingTask task;
-	JPanel status;
-	JButton startButton, stopButton;
+	Timer				timer;
+	URL					url;
+	URLPingTask	task;
+	JPanel			status;
+	JButton			startButton, stopButton;
 	
 	public URLMonitorPanel(String url, Timer t) throws MalformedURLException {
 		setLayout(new BorderLayout());

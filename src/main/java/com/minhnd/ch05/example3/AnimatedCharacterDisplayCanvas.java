@@ -11,10 +11,10 @@ import java.util.concurrent.atomic.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
 	
-	private AtomicBoolean done = new AtomicBoolean(true);
-	private AtomicInteger curX = new AtomicInteger(0);
-	private AtomicInteger tempChar = new AtomicInteger(0);
-	private Thread timer = null;
+	private AtomicBoolean	done			= new AtomicBoolean(true);
+	private AtomicInteger	curX			= new AtomicInteger(0);
+	private AtomicInteger	tempChar	= new AtomicInteger(0);
+	private Thread				timer			= null;
 	
 	public AnimatedCharacterDisplayCanvas() {
 		startAnimationThread();

@@ -8,8 +8,8 @@ import com.minhnd.ch02.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
 	
-	private volatile boolean done = false;
-	private int curX = 0;
+	private volatile boolean	done	= false;
+	private int								curX	= 0;
 	
 	public AnimatedCharacterDisplayCanvas() {
 	}

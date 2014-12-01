@@ -9,8 +9,8 @@ public class URLPingTask extends TimerTask {
 		public void isAlive(boolean b);
 	}
 	
-	URL url;
-	URLUpdate updater;
+	URL				url;
+	URLUpdate	updater;
 	
 	public URLPingTask(URL url) {
 		this(url, null);

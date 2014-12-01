@@ -5,16 +5,16 @@ import java.util.*;
 import com.minhnd.ch02.*;
 
 public class RandomCharacterGenerator implements CharacterSource, Runnable {
-	static char[] chars;
-	static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
+	static char[]							chars;
+	static String							charArray	= "abcdefghijklmnopqrstuvwxyz0123456789";
 	static {
 		chars = charArray.toCharArray();
 	}
 	
-	Random random;
-	CharacterEventHandler handler;
+	Random										random;
+	CharacterEventHandler			handler;
 	
-	private volatile boolean done = false;
+	private volatile boolean	done			= false;
 	
 	public RandomCharacterGenerator() {
 		random = new Random();

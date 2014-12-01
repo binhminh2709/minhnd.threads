@@ -4,7 +4,7 @@ import java.lang.*;
 import java.util.concurrent.atomic.*;
 
 public class AtomicDouble extends Number {
-	private AtomicReference<Double> value;
+	private AtomicReference<Double>	value;
 	
 	public AtomicDouble() {
 		this(0.0);

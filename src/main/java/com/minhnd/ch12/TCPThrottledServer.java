@@ -4,9 +4,9 @@ import java.net.*;
 import java.io.*;
 
 public abstract class TCPThrottledServer implements Runnable {
-	ServerSocket server = null;
-	Thread[] serverThreads;
-	volatile boolean done = false;
+	ServerSocket			server	= null;
+	Thread[]					serverThreads;
+	volatile boolean	done		= false;
 	
 	public synchronized void startServer(int port, int nThreads) throws IOException {
 		server = new ServerSocket(port);

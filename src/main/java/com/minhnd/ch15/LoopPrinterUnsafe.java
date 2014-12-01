@@ -5,7 +5,7 @@ import java.io.*;
 
 // Non-thread-safe version of a loop printer
 public class LoopPrinterUnsafe {
-	private Vector pStorage[];
+	private Vector	pStorage[];
 	
 	public LoopPrinterUnsafe(int size) {
 		pStorage = new Vector[size];

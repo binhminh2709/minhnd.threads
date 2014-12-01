@@ -8,9 +8,9 @@ import java.awt.event.*;
 
 public class ScoreLabel extends JLabel implements CharacterListener {
 	
-	private volatile int score = 0;
-	private int char2type = -1;
-	private CharacterSource generator = null, typist = null;
+	private volatile int	score			= 0;
+	private int						char2type	= -1;
+	private CharacterSource	generator	= null, typist = null;
 	
 	public ScoreLabel(CharacterSource generator, CharacterSource typist) {
 		this.generator = generator;

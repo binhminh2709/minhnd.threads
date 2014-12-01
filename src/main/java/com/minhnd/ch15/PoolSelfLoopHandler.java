@@ -1,7 +1,7 @@
 package com.minhnd.ch15;
 
 public class PoolSelfLoopHandler extends PoolLoopHandler {
-	private int groupSize;
+	private int	groupSize;
 	
 	public PoolSelfLoopHandler(int start, int end, int size, int threads) {
 		super(start, end, threads);

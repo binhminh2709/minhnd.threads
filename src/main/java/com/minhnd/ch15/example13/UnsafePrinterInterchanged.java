@@ -6,9 +6,9 @@ import java.io.*;
 import com.minhnd.ch15.*;
 
 public class UnsafePrinterInterchanged implements ScaleTester {
-	private float lookupValues[][];
-	private int nRows, nCols, nThreads;
-	private LoopPrinterUnsafe lp;
+	private float							lookupValues[][];
+	private int								nRows, nCols, nThreads;
+	private LoopPrinterUnsafe	lp;
 	
 	private class UnsafePrinterInterchangedHandler extends GuidedLoopHandler {
 		UnsafePrinterInterchangedHandler(int nc, int nt) {

@@ -4,10 +4,10 @@ import java.net.*;
 import java.io.*;
 
 public abstract class InterruptibleReader extends Thread {
-	private Object lock = new Object();
-	private InputStream is;
-	private boolean done;
-	private int buflen;
+	private Object			lock	= new Object();
+	private InputStream	is;
+	private boolean			done;
+	private int					buflen;
 	
 	protected void processData(byte[] b, int n) {
 	}

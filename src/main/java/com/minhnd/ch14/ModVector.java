@@ -71,7 +71,7 @@ public class ModVector<E> extends AbstractList<E> implements List<E>, RandomAcce
 	 *
 	 * @serial
 	 */
-	protected Object[] elementData;
+	protected Object[]				elementData;
 	
 	/**
 	 * The number of valid components in this <tt>ModVector</tt> object. 
@@ -80,7 +80,7 @@ public class ModVector<E> extends AbstractList<E> implements List<E>, RandomAcce
 	 *
 	 * @serial
 	 */
-	protected int elementCount;
+	protected int							elementCount;
 	
 	/**
 	 * The amount by which the capacity of the vector is automatically 
@@ -90,10 +90,10 @@ public class ModVector<E> extends AbstractList<E> implements List<E>, RandomAcce
 	 *
 	 * @serial
 	 */
-	protected int capacityIncrement;
+	protected int							capacityIncrement;
 	
 	/** use serialVersionUID from JDK 1.0.2 for interoperability */
-	private static final long serialVersionUID = -2767605614048989439L;
+	private static final long	serialVersionUID	= -2767605614048989439L;
 	
 	/**
 	 * Constructs an empty vector with the specified initial capacity and
@@ -290,7 +290,7 @@ public class ModVector<E> extends AbstractList<E> implements List<E>, RandomAcce
 	 */
 	public Enumeration<E> elements() {
 		return new Enumeration<E>() {
-			int count = 0;
+			int	count	= 0;
 			
 			public boolean hasMoreElements() {
 				return count < elementCount;

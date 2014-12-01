@@ -2,12 +2,12 @@ package com.minhnd.ch15.example2;
 
 public class SinTable implements Runnable {
 	private class SinTableRange {
-		public int start, end;
+		public int	start, end;
 	}
 	
-	private float lookupValues[];
-	private Thread lookupThreads[];
-	private int startLoop, endLoop, curLoop, numThreads;
+	private float		lookupValues[];
+	private Thread	lookupThreads[];
+	private int			startLoop, endLoop, curLoop, numThreads;
 	
 	public SinTable() {
 		lookupValues = new float[360 * 100];

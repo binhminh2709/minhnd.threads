@@ -3,8 +3,8 @@ package com.minhnd.ch15.example8;
 import com.minhnd.ch15.*;
 
 public class SinTable extends PoolLoopHandler {
-	private float lookupValues[][];
-	private int j;
+	private float	lookupValues[][];
+	private int		j;
 	
 	public SinTable() {
 		super(0, 360, 12);

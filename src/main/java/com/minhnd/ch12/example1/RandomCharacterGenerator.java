@@ -9,16 +9,16 @@ import java.util.concurrent.locks.*;
 import com.minhnd.ch12.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
-	private char[] chars;
-	private int curChar;
-	private Random random = new Random();
-	private CharacterEventHandler handler;
-	private boolean done = true;
-	private Lock lock = new ReentrantLock();
-	private Condition cv = lock.newCondition();
-	private Socket sock;
-	private DataInputStream reader;
-	private DataOutputStream writer;
+	private char[]								chars;
+	private int										curChar;
+	private Random								random	= new Random();
+	private CharacterEventHandler	handler;
+	private boolean								done		= true;
+	private Lock									lock		= new ReentrantLock();
+	private Condition							cv			= lock.newCondition();
+	private Socket								sock;
+	private DataInputStream				reader;
+	private DataOutputStream			writer;
 	
 	public RandomCharacterGenerator(String host, int port) throws IOException {
 		handler = new CharacterEventHandler();

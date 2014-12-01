@@ -4,8 +4,8 @@ import java.util.*;
 import java.text.*;
 
 public class Task implements Runnable {
-	long n;
-	String id;
+	long		n;
+	String	id;
 	
 	private long fib(long n) {
 		if (n == 0)

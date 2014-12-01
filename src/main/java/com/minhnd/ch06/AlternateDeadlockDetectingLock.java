@@ -15,7 +15,7 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 	// This array is not thread safe, and must be externally synchronized
 	//    by the class lock. Hence, it should only be called by static
 	//    methods.
-	private static List deadlockLocksRegistry = new ArrayList();
+	private static List	deadlockLocksRegistry	= new ArrayList();
 	
 	private static synchronized void registerLock(AlternateDeadlockDetectingLock ddl) {
 		if (!deadlockLocksRegistry.contains(ddl))
@@ -31,7 +31,7 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 	// This array is not thread safe, and must be externally synchronized
 	//    by the class lock. Hence, it should only be called by static
 	//    methods.
-	private List hardwaitingThreads = new ArrayList();
+	private List	hardwaitingThreads	= new ArrayList();
 	
 	private static synchronized void markAsHardwait(List l, Thread t) {
 		if (!l.contains(t))
@@ -113,9 +113,9 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 	//              for continued operation after failure. FastFail must be off.
 	//    HWSWTime: # of seconds before a Softwait is to be considered as a hardwait.
 	//              Default is 60 seconds.
-	private static boolean DDLFastFail = false;
-	private static boolean DDLCleanUp = false;
-	private static int DDLHWSWTime = 60;
+	private static boolean	DDLFastFail	= false;
+	private static boolean	DDLCleanUp	= false;
+	private static int			DDLHWSWTime	= 60;
 	
 	// Core Constructors
 	//
@@ -127,7 +127,7 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 		this(fair, false);
 	}
 	
-	private boolean debugging;
+	private boolean	debugging;
 	
 	public AlternateDeadlockDetectingLock(boolean fair, boolean debug) {
 		super(fair);
@@ -135,7 +135,7 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 		registerLock(this);
 	}
 	
-	private static boolean DDLdeadlockDETECTED = false;
+	private static boolean	DDLdeadlockDETECTED	= false;
 	
 	//
 	// Core Methods
@@ -280,7 +280,7 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 	//      first. It is not possible to create a new deadlock just by releasing
 	//      locks.
 	public class DeadlockDetectingCondition implements Condition {
-		Condition embedded;
+		Condition	embedded;
 		
 		protected DeadlockDetectingCondition(ReentrantLock lock, Condition embedded) {
 			this.embedded = embedded;
@@ -349,12 +349,12 @@ public class AlternateDeadlockDetectingLock extends ReentrantLock {
 	// Testing routines here
 	//
 	// These are very simple tests -- more tests will have to be written
-	private static Lock a = new AlternateDeadlockDetectingLock(false, true);
-	private static Lock b = new AlternateDeadlockDetectingLock(false, true);
-	private static Lock c = new AlternateDeadlockDetectingLock(false, true);
-	private static Condition wa = a.newCondition();
-	private static Condition wb = b.newCondition();
-	private static Condition wc = c.newCondition();
+	private static Lock				a		= new AlternateDeadlockDetectingLock(false, true);
+	private static Lock				b		= new AlternateDeadlockDetectingLock(false, true);
+	private static Lock				c		= new AlternateDeadlockDetectingLock(false, true);
+	private static Condition	wa	= a.newCondition();
+	private static Condition	wb	= b.newCondition();
+	private static Condition	wc	= c.newCondition();
 	
 	private static void delaySeconds(int seconds) {
 		try {

@@ -7,11 +7,11 @@ import java.util.concurrent.locks.*;
 
 public class ScoreLabel extends JLabel implements CharacterListener {
 	
-	private volatile int score = 0;
-	private int char2type = -1;
-	private CharacterSource generator = null, typist = null;
-	private Lock scoreLock = new ReentrantLock();
-	private CharCounter counter;
+	private volatile int	score			= 0;
+	private int						char2type	= -1;
+	private CharacterSource	generator	= null, typist = null;
+	private Lock						scoreLock	= new ReentrantLock();
+	private CharCounter			counter;
 	
 	public ScoreLabel(CharacterSource generator, CharacterSource typist, CharCounter ct) {
 		this.generator = generator;

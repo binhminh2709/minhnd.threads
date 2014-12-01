@@ -6,10 +6,10 @@ import java.nio.channels.*;
 import java.util.*;
 
 public abstract class TCPNIOServer implements Runnable {
-	protected ServerSocketChannel channel = null;
-	private boolean done = false;
-	protected Selector selector;
-	protected int port = 8000;
+	protected ServerSocketChannel	channel	= null;
+	private boolean								done		= false;
+	protected Selector						selector;
+	protected int									port		= 8000;
 	
 	public void startServer() throws IOException {
 		channel = ServerSocketChannel.open();

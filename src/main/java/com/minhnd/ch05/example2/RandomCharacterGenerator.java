@@ -7,15 +7,15 @@ import java.util.concurrent.atomic.*;
 import com.minhnd.ch05.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
-	private static char[] chars;
-	private static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
+	private static char[]					chars;
+	private static String					charArray	= "abcdefghijklmnopqrstuvwxyz0123456789";
 	static {
 		chars = charArray.toCharArray();
 	}
 	
-	private Random random;
-	private CharacterEventHandler handler;
-	private AtomicBoolean done = new AtomicBoolean(true);
+	private Random								random;
+	private CharacterEventHandler	handler;
+	private AtomicBoolean					done			= new AtomicBoolean(true);
 	
 	public RandomCharacterGenerator() {
 		random = new Random();

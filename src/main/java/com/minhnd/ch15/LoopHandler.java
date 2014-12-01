@@ -2,11 +2,11 @@ package com.minhnd.ch15;
 
 public class LoopHandler implements Runnable {
 	protected class LoopRange {
-		public int start, end;
+		public int	start, end;
 	}
 	
-	protected Thread lookupThreads[];
-	protected int startLoop, endLoop, curLoop, numThreads;
+	protected Thread	lookupThreads[];
+	protected int			startLoop, endLoop, curLoop, numThreads;
 	
 	public LoopHandler(int start, int end, int threads) {
 		startLoop = curLoop = start;

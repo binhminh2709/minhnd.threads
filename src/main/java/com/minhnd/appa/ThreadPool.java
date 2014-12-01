@@ -34,8 +34,8 @@ import java.util.*;
 public class ThreadPool {
 	
 	class ThreadPoolRequest {
-		Runnable target;
-		Object lock;
+		Runnable	target;
+		Object		lock;
 		
 		ThreadPoolRequest(Runnable t, Object l) {
 			target = t;
@@ -44,8 +44,8 @@ public class ThreadPool {
 	}
 	
 	class ThreadPoolThread extends Thread {
-		ThreadPool parent;
-		boolean shouldRun = true;
+		ThreadPool	parent;
+		boolean			shouldRun	= true;
 		
 		ThreadPoolThread(ThreadPool parent, int i) {
 			super("ThreadPoolThread " + i);
@@ -99,12 +99,12 @@ public class ThreadPool {
 		}
 	}
 	
-	Vector objects;
-	int nObjects = 0;
-	CondVar cvAvailable, cvEmpty;
-	BusyFlag cvFlag;
-	ThreadPoolThread poolThreads[];
-	boolean terminated = false;
+	Vector						objects;
+	int								nObjects		= 0;
+	CondVar						cvAvailable, cvEmpty;
+	BusyFlag					cvFlag;
+	ThreadPoolThread	poolThreads[];
+	boolean						terminated	= false;
 	
 	public ThreadPool(int n) {
 		cvFlag = new BusyFlag();

@@ -5,9 +5,9 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 public class CharCounter {
-	public HashMap correctChars = new HashMap();
-	public HashMap incorrectChars = new HashMap();
-	private AbstractTableModel atm;
+	public HashMap							correctChars		= new HashMap();
+	public HashMap							incorrectChars	= new HashMap();
+	private AbstractTableModel	atm;
 	
 	public void correctChar(int c) {
 		synchronized (correctChars) {

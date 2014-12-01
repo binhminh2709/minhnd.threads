@@ -5,12 +5,12 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 public class CharacterTracker extends JPanel {
-	private CharCounter counter;
-	private AbstractTableModel model;
+	private CharCounter					counter;
+	private AbstractTableModel	model;
 	
-	private static String[] colName = { "Character", "Num Correct", "Num Incorrect" };
-	private static int[] charAt = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-			'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+	private static String[]			colName	= { "Character", "Num Correct", "Num Incorrect" };
+	private static int[]				charAt	= { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+			'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 	
 	private class CharacterTrackerModel extends AbstractTableModel {
 		public int getColumnCount() {

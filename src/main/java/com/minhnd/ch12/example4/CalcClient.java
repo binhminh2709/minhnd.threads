@@ -5,8 +5,8 @@ import java.net.*;
 
 public class CalcClient extends Thread {
 	
-	long n;
-	Socket sock;
+	long		n;
+	Socket	sock;
 	
 	public CalcClient(long n, String host, int port) throws UnknownHostException, IOException {
 		this.n = n;

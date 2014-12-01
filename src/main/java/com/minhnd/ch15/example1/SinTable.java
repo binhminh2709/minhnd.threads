@@ -1,7 +1,7 @@
 package com.minhnd.ch15.example1;
 
 public class SinTable {
-	private float lookupValues[] = null;
+	private float	lookupValues[]	= null;
 	
 	public synchronized float[] getValues() {
 		if (lookupValues == null) {

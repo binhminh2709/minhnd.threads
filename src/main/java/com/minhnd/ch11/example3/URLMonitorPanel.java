@@ -8,12 +8,12 @@ import java.util.concurrent.*;
 
 public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
 	
-	ScheduledThreadPoolExecutor executor;
-	ScheduledFuture cancellable;
-	URL url;
-	URLPingTask task;
-	JPanel status;
-	JButton startButton, stopButton;
+	ScheduledThreadPoolExecutor	executor;
+	ScheduledFuture							cancellable;
+	URL													url;
+	URLPingTask									task;
+	JPanel											status;
+	JButton											startButton, stopButton;
 	
 	public URLMonitorPanel(String url, ScheduledThreadPoolExecutor se) throws MalformedURLException {
 		setLayout(new BorderLayout());

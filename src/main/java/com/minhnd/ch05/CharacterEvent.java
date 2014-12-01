@@ -1,8 +1,8 @@
 package com.minhnd.ch05;
 
 public class CharacterEvent {
-	public CharacterSource source;
-	public int character;
+	public CharacterSource	source;
+	public int							character;
 	
 	public CharacterEvent(CharacterSource cs, int c) {
 		source = cs;

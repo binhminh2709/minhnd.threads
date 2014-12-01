@@ -5,14 +5,14 @@ import java.util.*;
 import com.minhnd.ch02.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
-	static char[] chars;
-	static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
+	static char[]					chars;
+	static String					charArray	= "abcdefghijklmnopqrstuvwxyz0123456789";
 	static {
 		chars = charArray.toCharArray();
 	}
 	
-	Random random;
-	CharacterEventHandler handler;
+	Random								random;
+	CharacterEventHandler	handler;
 	
 	public RandomCharacterGenerator() {
 		random = new Random();

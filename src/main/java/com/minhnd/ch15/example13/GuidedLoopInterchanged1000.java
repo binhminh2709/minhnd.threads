@@ -6,9 +6,9 @@ import java.io.*;
 import com.minhnd.ch15.*;
 
 public class GuidedLoopInterchanged1000 implements ScaleTester {
-	private float lookupValues[][];
-	private int nRows, nCols, nThreads;
-	private LoopPrinter lp;
+	private float				lookupValues[][];
+	private int					nRows, nCols, nThreads;
+	private LoopPrinter	lp;
 	
 	private class GuidedLoopInterchangedHandler extends GuidedLoopHandler {
 		GuidedLoopInterchangedHandler(int nc, int nt) {

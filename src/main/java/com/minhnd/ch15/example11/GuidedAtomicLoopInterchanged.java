@@ -3,9 +3,9 @@ package com.minhnd.ch15.example11;
 import com.minhnd.ch15.*;
 
 public class GuidedAtomicLoopInterchanged implements ScaleTester {
-	private float lookupValues[][];
-	private int nRows, nCols, nThreads;
-	AtomicDouble sumValue = new AtomicDouble();
+	private float	lookupValues[][];
+	private int		nRows, nCols, nThreads;
+	AtomicDouble	sumValue	= new AtomicDouble();
 	
 	private class GuidedLoopInterchangedHandler extends GuidedLoopHandler {
 		GuidedLoopInterchangedHandler(int nc, int nt) {

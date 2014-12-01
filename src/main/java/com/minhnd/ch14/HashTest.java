@@ -5,8 +5,8 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
 public class HashTest implements Runnable {
-	static int nLoops;
-	static int nThreads;
+	static int	nLoops;
+	static int	nThreads;
 	
 	public static void main(String[] args) {
 		
@@ -86,7 +86,7 @@ public class HashTest implements Runnable {
 			}
 	}
 	
-	static Map targetMap;
+	static Map	targetMap;
 	
 	public void run() {
 		for (int i = 0; i < nLoops; i++) {

@@ -3,7 +3,7 @@ package com.minhnd.ch08.example4;
 import java.util.*;
 
 public class CharacterEventHandler {
-	private ArrayList listeners = new ArrayList();
+	private ArrayList	listeners	= new ArrayList();
 	
 	public void addCharacterListener(CharacterListener cl) {
 		synchronized (listeners) {

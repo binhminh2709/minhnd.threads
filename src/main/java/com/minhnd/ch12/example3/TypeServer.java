@@ -10,17 +10,17 @@ import java.util.*;
 import com.minhnd.ch12.*;
 
 public class TypeServer extends TCPNIOServer {
-	static String testString = "Thisisateststring";
+	static String	testString	= "Thisisateststring";
 	
 	static class ClientInfo {
-		ByteBuffer inBuf = ByteBuffer.allocateDirect(512);
-		ByteBuffer outBuf = ByteBuffer.allocateDirect(512);
-		boolean outputPending = false;
-		SocketChannel channel;
+		ByteBuffer		inBuf					= ByteBuffer.allocateDirect(512);
+		ByteBuffer		outBuf				= ByteBuffer.allocateDirect(512);
+		boolean				outputPending	= false;
+		SocketChannel	channel;
 	}
 	
-	Map allClients = new HashMap();
-	Charset encoder = Charset.forName("UTF-8");
+	Map			allClients	= new HashMap();
+	Charset	encoder			= Charset.forName("UTF-8");
 	
 	protected void handleClient(SelectionKey key) throws IOException {
 		SocketChannel sc = (SocketChannel) key.channel();

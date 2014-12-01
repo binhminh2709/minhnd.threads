@@ -30,8 +30,8 @@
 package com.minhnd.appa;
 
 public class Barrier {
-	private int threads2Wait4;
-	private InterruptedException iex;
+	private int										threads2Wait4;
+	private InterruptedException	iex;
 	
 	public Barrier(int nThreads) {
 		threads2Wait4 = nThreads;

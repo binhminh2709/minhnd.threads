@@ -3,7 +3,7 @@ package com.minhnd.ch15.example3;
 import com.minhnd.ch15.*;
 
 public class SinTable extends LoopHandler {
-	private float lookupValues[];
+	private float	lookupValues[];
 	
 	public SinTable() {
 		super(0, 360 * 100, 12);

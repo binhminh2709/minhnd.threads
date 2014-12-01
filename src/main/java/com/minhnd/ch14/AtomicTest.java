@@ -5,8 +5,8 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
 public class AtomicTest {
-	static int nLoops;
-	static int nThreads;
+	static int	nLoops;
+	static int	nThreads;
 	
 	public static void main(String[] args) {
 		
@@ -42,7 +42,7 @@ public class AtomicTest {
 	}
 	
 	static class AtomicRunnable implements Runnable {
-		AtomicInteger ai = new AtomicInteger(1);
+		AtomicInteger	ai	= new AtomicInteger(1);
 		
 		public void run() {
 			for (int i = 0; i < nLoops; i++)
@@ -51,7 +51,7 @@ public class AtomicTest {
 	}
 	
 	static class SyncRunnable implements Runnable {
-		int testVar;
+		int	testVar;
 		
 		synchronized void incrVar() {
 			testVar++;

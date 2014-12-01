@@ -8,10 +8,10 @@ import com.minhnd.ch04.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
 	
-	private boolean done = true;
-	private int curX = 0;
-	private Thread timer = null;
-	private Object doneLock = new Object();
+	private boolean	done			= true;
+	private int			curX			= 0;
+	private Thread	timer			= null;
+	private Object	doneLock	= new Object();
 	
 	public AnimatedCharacterDisplayCanvas() {
 	}
