@@ -6,8 +6,9 @@ public class Factorial {
 		int n = Integer.parseInt(args[0]);
 		System.out.print(n + "! is ");
 		int fact = 1;
-		while (n > 1)
+		while (n > 1) {
 			fact *= n--;
+		}
 		System.out.println(fact);
 	}
 	
