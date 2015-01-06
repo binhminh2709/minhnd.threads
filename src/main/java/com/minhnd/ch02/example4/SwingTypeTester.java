@@ -1,11 +1,21 @@
 package com.minhnd.ch02.example4;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-import com.minhnd.ch02.*;
+import com.minhnd.ch02.CharacterDisplayCanvas;
+import com.minhnd.ch02.CharacterEventHandler;
+import com.minhnd.ch02.CharacterListener;
+import com.minhnd.ch02.CharacterSource;
 
 public class SwingTypeTester extends JFrame implements CharacterSource {
 	
@@ -25,15 +35,12 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
 		handler = new CharacterEventHandler();
 		displayCanvas = new CharacterDisplayCanvas();
 		feedbackCanvas = new CharacterDisplayCanvas(this);
-		quitButton = new JButton();
-		startButton = new JButton();
-		stopButton = new JButton();
+		quitButton = new JButton("Start");
+		startButton = new JButton("Stop");
+		stopButton = new JButton("Quit");
 		add(displayCanvas, BorderLayout.NORTH);
 		add(feedbackCanvas, BorderLayout.CENTER);
 		JPanel p = new JPanel();
-		startButton.setLabel("Start");
-		stopButton.setLabel("Stop");
-		quitButton.setLabel("Quit");
 		p.add(startButton);
 		p.add(stopButton);
 		p.add(quitButton);

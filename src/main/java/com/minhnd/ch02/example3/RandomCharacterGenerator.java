@@ -1,8 +1,10 @@
 package com.minhnd.ch02.example3;
 
-import java.util.*;
+import java.util.Random;
 
-import com.minhnd.ch02.*;
+import com.minhnd.ch02.CharacterEventHandler;
+import com.minhnd.ch02.CharacterListener;
+import com.minhnd.ch02.CharacterSource;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
 	static char[]							chars;
