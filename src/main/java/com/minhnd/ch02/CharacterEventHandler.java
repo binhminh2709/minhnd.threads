@@ -1,6 +1,6 @@
 package com.minhnd.ch02;
 
-import java.util.*;
+import java.util.Vector;
 
 public class CharacterEventHandler {
 	

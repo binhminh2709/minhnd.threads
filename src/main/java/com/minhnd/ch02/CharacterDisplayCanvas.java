@@ -1,7 +1,12 @@
 package com.minhnd.ch02;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Toolkit;
+
+import javax.swing.JComponent;
 
 public class CharacterDisplayCanvas extends JComponent implements CharacterListener {
 	
