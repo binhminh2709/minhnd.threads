@@ -1,17 +1,30 @@
 package ch07.example3;
 
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
-import ch07.*;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-import java.awt.*;
-import java.awt.event.*;
+import ch07.CharacterDisplayCanvasImpl;
+import ch07.CharacterEventHandler;
+import ch07.ICharacterListener;
+import ch07.ICharacterSource;
 
-public class SwingTypeTester extends JFrame implements CharacterSource {
+public class SwingTypeTester extends JFrame implements ICharacterSource {
   
   protected RandomCharacterGenerator producer;
   private AnimatedCharacterDisplayCanvas displayCanvas;
-  private CharacterDisplayCanvas feedbackCanvas;
+  private CharacterDisplayCanvasImpl feedbackCanvas;
   private JButton quitButton;
   private JButton startButton;
   private JButton stopButton;
@@ -30,7 +43,7 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
     producer.setDone(true);
     producer.start();
     displayCanvas = new AnimatedCharacterDisplayCanvas(producer);
-    feedbackCanvas = new CharacterDisplayCanvas(this);
+    feedbackCanvas = new CharacterDisplayCanvasImpl(this);
     quitButton = new JButton();
     startButton = new JButton();
     stopButton = new JButton();
@@ -107,11 +120,11 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
     System.exit(0);
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   

@@ -1,12 +1,14 @@
 package ch04.example1;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Graphics;
 
-import javax.swing.*;
+import ch04.CharacterDisplayCanvasImpl;
+import ch04.CharacterEvent;
+import ch04.ICharacterListener;
+import ch04.ICharacterSource;
 
-import ch04.*;
-
-public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
+public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvasImpl implements ICharacterListener, Runnable {
   
   private boolean done = true;
   private int curX = 0;
@@ -15,7 +17,7 @@ public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas imple
   public AnimatedCharacterDisplayCanvas() {
   }
   
-  public AnimatedCharacterDisplayCanvas(CharacterSource cs) {
+  public AnimatedCharacterDisplayCanvas(ICharacterSource cs) {
     super(cs);
   }
   

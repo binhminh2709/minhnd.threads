@@ -1,8 +1,13 @@
 package ch06;
 
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 // This is a very slow implementation of a ReentrantLock class and is not for
 //   everyday usage. The purpose of this class is to test for deadlocks. The lock()

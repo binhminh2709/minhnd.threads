@@ -1,7 +1,6 @@
 package ch05;
 
-import java.lang.*;
-import java.util.concurrent.atomic.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class AtomicDouble extends Number {
   private AtomicReference<Double> value;

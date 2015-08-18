@@ -8,7 +8,7 @@ import java.awt.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
-public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
+public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvasImpl implements ICharacterListener, Runnable {
   
   private volatile boolean done = false;
   private int curX;
@@ -16,7 +16,7 @@ public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas imple
   private Condition cv = lock.newCondition();
   private Thread timer = null;
   
-  public AnimatedCharacterDisplayCanvas(CharacterSource cs) {
+  public AnimatedCharacterDisplayCanvas(ICharacterSource cs) {
     super(cs);
   }
   

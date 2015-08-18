@@ -10,14 +10,14 @@ import java.awt.event.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
-public class ScoreLabel extends JLabel implements CharacterListener {
+public class ScoreLabel extends JLabel implements ICharacterListener {
   
   private volatile int score = 0;
   private int char2type = -1;
-  private CharacterSource generator = null, typist = null;
+  private ICharacterSource generator = null, typist = null;
   private Lock scoreLock = new ReentrantLock();
   
-  public ScoreLabel(CharacterSource generator, CharacterSource typist) {
+  public ScoreLabel(ICharacterSource generator, ICharacterSource typist) {
     this.generator = generator;
     this.typist = typist;
     if (generator != null)
@@ -30,7 +30,7 @@ public class ScoreLabel extends JLabel implements CharacterListener {
     this(null, null);
   }
   
-  public void resetGenerator(CharacterSource newGenerator) {
+  public void resetGenerator(ICharacterSource newGenerator) {
     try {
       scoreLock.lock();
       if (generator != null)
@@ -43,7 +43,7 @@ public class ScoreLabel extends JLabel implements CharacterListener {
     }
   }
   
-  public void resetTypist(CharacterSource newTypist) {
+  public void resetTypist(ICharacterSource newTypist) {
     try {
       scoreLock.lock();
       if (typist != null)

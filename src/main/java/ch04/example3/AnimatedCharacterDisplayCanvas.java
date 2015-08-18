@@ -9,7 +9,7 @@ import ch04.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
-public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
+public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvasImpl implements ICharacterListener, Runnable {
   
   private boolean done = true;
   private int curX = 0;
@@ -20,7 +20,7 @@ public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas imple
   public AnimatedCharacterDisplayCanvas() {
   }
   
-  public AnimatedCharacterDisplayCanvas(CharacterSource cs) {
+  public AnimatedCharacterDisplayCanvas(ICharacterSource cs) {
     super(cs);
   }
   

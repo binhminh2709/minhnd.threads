@@ -58,6 +58,7 @@ public class SwingTypeTester extends JFrame implements ICharacterSource {
           newCharacter((int) c);
       }
     });
+    
     startButton.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent evt) {
         producer = new RandomCharacterGenerator();

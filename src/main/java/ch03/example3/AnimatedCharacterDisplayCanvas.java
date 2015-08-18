@@ -1,10 +1,12 @@
 package ch03.example3;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Graphics;
 
-import javax.swing.*;
-
-import ch03.*;
+import ch03.CharacterDisplayCanvas;
+import ch03.CharacterEvent;
+import ch03.CharacterListener;
+import ch03.CharacterSource;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
   

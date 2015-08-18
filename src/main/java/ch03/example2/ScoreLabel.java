@@ -1,12 +1,14 @@
 package ch03.example2;
 
-import javax.swing.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
-import ch03.*;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
 
-import java.awt.event.*;
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
+import ch03.CharacterEvent;
+import ch03.CharacterListener;
+import ch03.CharacterSource;
 
 public class ScoreLabel extends JLabel implements CharacterListener {
   

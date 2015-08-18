@@ -7,11 +7,11 @@ import javax.swing.*;
 
 import ch04.*;
 
-public class SwingTypeTester extends JFrame implements CharacterSource {
+public class SwingTypeTester extends JFrame implements ICharacterSource {
   
   protected RandomCharacterGenerator producer;
   private AnimatedCharacterDisplayCanvas displayCanvas;
-  private CharacterDisplayCanvas feedbackCanvas;
+  private CharacterDisplayCanvasImpl feedbackCanvas;
   private JButton quitButton;
   private JButton startButton;
   private JButton stopButton;
@@ -28,7 +28,7 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
     producer.setDone(true);
     producer.start();
     displayCanvas = new AnimatedCharacterDisplayCanvas(producer);
-    feedbackCanvas = new CharacterDisplayCanvas(this);
+    feedbackCanvas = new CharacterDisplayCanvasImpl(this);
     quitButton = new JButton();
     startButton = new JButton();
     stopButton = new JButton();
@@ -101,11 +101,11 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
     System.exit(0);
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   

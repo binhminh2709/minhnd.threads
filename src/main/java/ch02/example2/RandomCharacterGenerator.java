@@ -1,8 +1,10 @@
 package ch02.example2;
 
-import java.util.*;
+import java.util.Random;
 
-import ch02.*;
+import ch02.CharacterEventHandler;
+import ch02.ICharacterListener;
+import ch02.ICharacterSource;
 
 public class RandomCharacterGenerator extends Thread implements ICharacterSource {
   

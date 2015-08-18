@@ -8,14 +8,14 @@ import java.awt.event.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-public class ScoreLabel extends JLabel implements CharacterListener {
+public class ScoreLabel extends JLabel implements ICharacterListener {
   private AtomicScoreAndCharacter scoreAchar = new AtomicScoreAndCharacter();
-  private AtomicReference<CharacterSource> generator = null;
-  private AtomicReference<CharacterSource> typist = null;
+  private AtomicReference<ICharacterSource> generator = null;
+  private AtomicReference<ICharacterSource> typist = null;
   
-  public ScoreLabel(CharacterSource generator, CharacterSource typist) {
-    this.generator = new AtomicReference<CharacterSource>(generator);
-    this.typist = new AtomicReference<CharacterSource>(typist);
+  public ScoreLabel(ICharacterSource generator, ICharacterSource typist) {
+    this.generator = new AtomicReference<ICharacterSource>(generator);
+    this.typist = new AtomicReference<ICharacterSource>(typist);
     
     if (generator != null)
       generator.addCharacterListener(this);
@@ -27,8 +27,8 @@ public class ScoreLabel extends JLabel implements CharacterListener {
     this(null, null);
   }
   
-  public void resetGenerator(CharacterSource newGenerator) {
-    CharacterSource oldGenerator;
+  public void resetGenerator(ICharacterSource newGenerator) {
+    ICharacterSource oldGenerator;
     
     if (newGenerator != null)
       newGenerator.addCharacterListener(this);
@@ -38,8 +38,8 @@ public class ScoreLabel extends JLabel implements CharacterListener {
       oldGenerator.removeCharacterListener(this);
   }
   
-  public void resetTypist(CharacterSource newTypist) {
-    CharacterSource oldTypist;
+  public void resetTypist(ICharacterSource newTypist) {
+    ICharacterSource oldTypist;
     
     if (newTypist != null)
       newTypist.addCharacterListener(this);

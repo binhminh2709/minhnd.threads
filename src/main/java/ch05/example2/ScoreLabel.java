@@ -8,13 +8,13 @@ import java.awt.event.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-public class ScoreLabel extends JLabel implements CharacterListener {
+public class ScoreLabel extends JLabel implements ICharacterListener {
   private AtomicInteger score = new AtomicInteger(0);
   private AtomicInteger char2type = new AtomicInteger(-1);
-  private AtomicReference<CharacterSource> generator = null;
-  private AtomicReference<CharacterSource> typist = null;
+  private AtomicReference<ICharacterSource> generator = null;
+  private AtomicReference<ICharacterSource> typist = null;
   
-  public ScoreLabel(CharacterSource generator, CharacterSource typist) {
+  public ScoreLabel(ICharacterSource generator, ICharacterSource typist) {
     this.generator = new AtomicReference(generator);
     this.typist = new AtomicReference(typist);
     
@@ -28,8 +28,8 @@ public class ScoreLabel extends JLabel implements CharacterListener {
     this(null, null);
   }
   
-  public void resetGenerator(CharacterSource newGenerator) {
-    CharacterSource oldGenerator;
+  public void resetGenerator(ICharacterSource newGenerator) {
+    ICharacterSource oldGenerator;
     
     if (newGenerator != null)
       newGenerator.addCharacterListener(this);
@@ -39,8 +39,8 @@ public class ScoreLabel extends JLabel implements CharacterListener {
       oldGenerator.removeCharacterListener(this);
   }
   
-  public void resetTypist(CharacterSource newTypist) {
-    CharacterSource oldTypist;
+  public void resetTypist(ICharacterSource newTypist) {
+    ICharacterSource oldTypist;
     
     if (newTypist != null)
       newTypist.addCharacterListener(this);

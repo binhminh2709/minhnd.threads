@@ -1,6 +1,6 @@
 package ch05.example4;
 
-import java.util.*;
+import java.util.HashMap;
 
 public abstract class Calculator {
   
@@ -13,8 +13,9 @@ public abstract class Calculator {
   public Object calculate(Object param) {
     HashMap hm = results.get();
     Object o = hm.get(param);
-    if (o != null)
+    if (o != null) {
       return o;
+    }
     o = doLocalCalculate(param);
     hm.put(param, o);
     return o;

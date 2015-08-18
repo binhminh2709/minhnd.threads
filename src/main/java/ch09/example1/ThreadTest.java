@@ -5,8 +5,10 @@ import ch09.*;
 public class ThreadTest {
   
   public static void main(String[] args) {
-    int nThreads = Integer.parseInt(args[0]);
-    long n = Long.parseLong(args[1]);
+    //int nThreads = Integer.parseInt(args[0]);
+    int nThreads = 10;
+    //long n = Long.parseLong(args[1]);
+    long n = 10;
     Thread t[] = new Thread[nThreads];
     
     for (int i = 0; i < t.length; i++) {

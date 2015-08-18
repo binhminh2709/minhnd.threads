@@ -1,9 +1,12 @@
 package ch12.example1;
 
-import java.io.*;
-import java.net.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
 
-import ch12.*;
+import ch12.TCPServer;
+import ch12.TypeServerConstants;
 
 public class TypeServer extends TCPServer {
   public void run(Socket data) {
@@ -29,7 +32,8 @@ public class TypeServer extends TCPServer {
   
   public static void main(String[] args) throws IOException {
     TypeServer ts = new TypeServer();
-    ts.startServer(Integer.parseInt(args[0]));
+    //ts.startServer(Integer.parseInt(args[0]));
+    ts.startServer(8003);
     System.out.println("Server ready and waiting...");
   }
 }

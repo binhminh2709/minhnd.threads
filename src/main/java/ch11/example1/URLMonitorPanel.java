@@ -1,10 +1,22 @@
 package ch11.example1;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.net.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Timer;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
   
@@ -62,6 +74,7 @@ public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
   }
   
   public static void main(String[] args) throws Exception {
+    args = new String[] { "http://www.24h.com.vn/", "http://genk.vn/", "https://www.google.com/" };
     JFrame frame = new JFrame("URL Monitor");
     Container c = frame.getContentPane();
     c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));

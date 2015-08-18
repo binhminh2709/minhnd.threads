@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.*;
 
 import ch05.*;
 
-public class RandomCharacterGenerator extends Thread implements CharacterSource {
+public class RandomCharacterGenerator extends Thread implements ICharacterSource {
   private static char[] chars;
   private static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
   static {
@@ -30,11 +30,11 @@ public class RandomCharacterGenerator extends Thread implements CharacterSource 
     return getPauseTime(2000, 5500);
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   

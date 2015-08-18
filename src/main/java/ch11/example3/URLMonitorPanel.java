@@ -3,7 +3,9 @@ package ch11.example3;
 import java.awt.*;
 import java.awt.event.*;
 import java.net.*;
+
 import javax.swing.*;
+
 import java.util.concurrent.*;
 
 public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
@@ -63,6 +65,7 @@ public class URLMonitorPanel extends JPanel implements URLPingTask.URLUpdate {
   }
   
   public static void main(String[] args) throws Exception {
+    args = new String[] { "http://www.24h.com.vn/", "http://genk.vn/", "https://www.google.com/" };
     JFrame frame = new JFrame("URL Monitor");
     Container c = frame.getContentPane();
     c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));

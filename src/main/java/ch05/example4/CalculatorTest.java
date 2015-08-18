@@ -3,7 +3,8 @@ package ch05.example4;
 public class CalculatorTest extends Calculator implements Runnable {
   
   public static void main(String[] args) {
-    int nThreads = Integer.parseInt(args[0]);
+    //int nThreads = Integer.parseInt(args[0]);
+    int nThreads = 10;
     for (int i = 0; i < nThreads; i++) {
       Thread t = new Thread(new CalculatorTest());
       t.start();

@@ -9,7 +9,7 @@ import ch05.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
+public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvasImpl implements ICharacterListener, Runnable {
   
   private AtomicBoolean done = new AtomicBoolean(true);
   private AtomicInteger curX = new AtomicInteger(0);
@@ -20,7 +20,7 @@ public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas imple
     startAnimationThread();
   }
   
-  public AnimatedCharacterDisplayCanvas(CharacterSource cs) {
+  public AnimatedCharacterDisplayCanvas(ICharacterSource cs) {
     super(cs);
     startAnimationThread();
   }
