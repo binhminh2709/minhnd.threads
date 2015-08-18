@@ -1,4 +1,4 @@
-package com.minhnd.ch11.example1;
+package ch11.example1;
 
 import java.awt.*;
 import java.awt.event.*;

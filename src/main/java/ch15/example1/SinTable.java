@@ -1,4 +1,4 @@
-package com.minhnd.ch15.example1;
+package ch15.example1;
 
 public class SinTable {
   private float lookupValues[] = null;

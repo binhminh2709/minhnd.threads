@@ -1,4 +1,4 @@
-package com.minhnd.ch04;
+package ch04;
 
 import java.util.*;
 

@@ -1,8 +1,8 @@
-package com.minhnd.ch11.example2;
+package ch11.example2;
 
 import javax.swing.*;
 
-import com.minhnd.ch11.*;
+import ch11.*;
 
 import java.awt.*;
 import java.awt.event.*;

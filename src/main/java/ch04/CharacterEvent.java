@@ -1,4 +1,4 @@
-package com.minhnd.ch04;
+package ch04;
 
 public class CharacterEvent {
   public CharacterSource source;

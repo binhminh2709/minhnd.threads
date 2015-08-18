@@ -1,10 +1,10 @@
-package com.minhnd.ch05.example2;
+package ch05.example2;
 
 import java.awt.*;
 
 import javax.swing.*;
 
-import com.minhnd.ch05.*;
+import ch05.*;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;

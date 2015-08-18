@@ -1,4 +1,4 @@
-package com.minhnd.ch09;
+package ch09;
 
 import java.util.*;
 import java.text.*;

@@ -1,8 +1,8 @@
-package com.minhnd.ch12.example2;
+package ch12.example2;
 
 import javax.swing.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 import java.awt.*;
 import java.util.concurrent.*;

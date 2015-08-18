@@ -5,7 +5,7 @@
  * SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
 
-package com.minhnd.ch14;
+package ch14;
 
 /**
  * The <code>ModVector</code> class implements a growable array of 

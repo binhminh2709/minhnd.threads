@@ -1,4 +1,4 @@
-package com.minhnd.ch15.example2;
+package ch15.example2;
 
 public class SinTable implements Runnable {
   private class SinTableRange {

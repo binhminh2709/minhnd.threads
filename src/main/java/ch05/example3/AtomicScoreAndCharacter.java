@@ -1,4 +1,4 @@
-package com.minhnd.ch05.example3;
+package ch05.example3;
 
 import java.util.concurrent.atomic.*;
 

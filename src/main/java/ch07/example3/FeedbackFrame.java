@@ -1,4 +1,4 @@
-package com.minhnd.ch07.example3;
+package ch07.example3;
 
 import java.lang.reflect.*;
 import java.awt.*;

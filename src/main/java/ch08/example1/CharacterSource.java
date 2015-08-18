@@ -1,4 +1,4 @@
-package com.minhnd.ch08.example1;
+package ch08.example1;
 
 public interface CharacterSource {
   public void addCharacterListener(CharacterListener cl);

@@ -1,9 +1,9 @@
-package com.minhnd.ch12.example1;
+package ch12.example1;
 
 import java.io.*;
 import java.net.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 public class TypeServer extends TCPServer {
   public void run(Socket data) {

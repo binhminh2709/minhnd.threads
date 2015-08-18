@@ -1,8 +1,8 @@
-package com.minhnd.ch10.example1;
+package ch10.example1;
 
 import java.util.concurrent.*;
 
-import com.minhnd.ch10.*;
+import ch10.*;
 
 public class ThreadPoolTest {
   

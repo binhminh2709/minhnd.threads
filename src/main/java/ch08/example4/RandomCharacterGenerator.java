@@ -1,4 +1,4 @@
-package com.minhnd.ch08.example4;
+package ch08.example4;
 
 import java.util.*;
 import java.util.concurrent.*;

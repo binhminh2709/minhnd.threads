@@ -1,10 +1,10 @@
-package com.minhnd.ch11.example2;
+package ch11.example2;
 
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
-import com.minhnd.ch11.*;
+import ch11.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
   private static char[] chars;

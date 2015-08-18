@@ -1,6 +1,6 @@
-package com.minhnd.ch10.example2;
+package ch10.example2;
 
-import com.minhnd.ch10.*;
+import ch10.*;
 
 public class SingleThreadTest {
   

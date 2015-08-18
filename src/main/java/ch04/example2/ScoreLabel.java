@@ -1,8 +1,8 @@
-package com.minhnd.ch04.example2;
+package ch04.example2;
 
 import javax.swing.*;
 
-import com.minhnd.ch04.*;
+import ch04.*;
 
 import java.awt.event.*;
 import java.util.concurrent.*;

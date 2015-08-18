@@ -1,10 +1,11 @@
-package com.minhnd.ch03.example5;
+package ch03.example5;
 
-import javax.swing.*;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
 
-import com.minhnd.ch03.*;
-
-import java.awt.event.*;
+import ch03.CharacterEvent;
+import ch03.CharacterListener;
+import ch03.CharacterSource;
 
 public class ScoreLabel extends JLabel implements CharacterListener {
   

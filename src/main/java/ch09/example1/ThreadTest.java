@@ -1,6 +1,6 @@
-package com.minhnd.ch09.example1;
+package ch09.example1;
 
-import com.minhnd.ch09.*;
+import ch09.*;
 
 public class ThreadTest {
   

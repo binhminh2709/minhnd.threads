@@ -1,8 +1,8 @@
-package com.minhnd.ch03.example3;
+package ch03.example3;
 
 import java.util.*;
 
-import com.minhnd.ch03.*;
+import ch03.*;
 
 public class RandomCharacterGenerator extends Thread implements CharacterSource {
   static char[] chars;

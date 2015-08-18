@@ -1,4 +1,4 @@
-package com.minhnd.ch07;
+package ch07;
 
 import javax.swing.*;
 import java.awt.*;

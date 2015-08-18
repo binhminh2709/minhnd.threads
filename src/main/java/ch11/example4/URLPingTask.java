@@ -1,4 +1,4 @@
-package com.minhnd.ch11.example4;
+package ch11.example4;
 
 import java.net.*;
 

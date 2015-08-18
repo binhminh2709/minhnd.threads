@@ -1,9 +1,9 @@
-package com.minhnd.ch15.example13;
+package ch15.example13;
 
 import java.text.*;
 import java.io.*;
 
-import com.minhnd.ch15.*;
+import ch15.*;
 
 public class Basic1000 implements ScaleTester {
   private float lookupValues[][];

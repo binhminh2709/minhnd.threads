@@ -1,10 +1,10 @@
-package com.minhnd.ch04.example3;
+package ch04.example3;
 
 import java.awt.*;
 
 import javax.swing.*;
 
-import com.minhnd.ch04.*;
+import ch04.*;
 
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;

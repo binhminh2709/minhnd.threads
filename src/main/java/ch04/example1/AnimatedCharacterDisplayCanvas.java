@@ -1,10 +1,10 @@
-package com.minhnd.ch04.example1;
+package ch04.example1;
 
 import java.awt.*;
 
 import javax.swing.*;
 
-import com.minhnd.ch04.*;
+import ch04.*;
 
 public class AnimatedCharacterDisplayCanvas extends CharacterDisplayCanvas implements CharacterListener, Runnable {
   

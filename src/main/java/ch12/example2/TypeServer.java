@@ -1,9 +1,9 @@
-package com.minhnd.ch12.example2;
+package ch12.example2;
 
 import java.io.*;
 import java.net.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 public class TypeServer extends TCPThrottledServer {
   public void run(Socket data) {

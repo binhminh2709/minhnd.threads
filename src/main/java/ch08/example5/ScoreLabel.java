@@ -1,4 +1,4 @@
-package com.minhnd.ch08.example5;
+package ch08.example5;
 
 import javax.swing.*;
 import java.awt.event.*;

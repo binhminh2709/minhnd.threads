@@ -1,11 +1,11 @@
-package com.minhnd.ch12.example4;
+package ch12.example4;
 
 import java.util.concurrent.*;
 import java.io.*;
 import java.nio.*;
 import java.nio.channels.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 public class CalcServer extends TCPNIOServer {
   

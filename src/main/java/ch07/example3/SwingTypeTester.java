@@ -1,8 +1,8 @@
-package com.minhnd.ch07.example3;
+package ch07.example3;
 
 import javax.swing.*;
 
-import com.minhnd.ch07.*;
+import ch07.*;
 
 import java.awt.*;
 import java.awt.event.*;

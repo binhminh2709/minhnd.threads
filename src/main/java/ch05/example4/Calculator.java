@@ -1,4 +1,4 @@
-package com.minhnd.ch05.example4;
+package ch05.example4;
 
 import java.util.*;
 

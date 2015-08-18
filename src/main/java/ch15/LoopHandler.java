@@ -1,4 +1,4 @@
-package com.minhnd.ch15;
+package ch15;
 
 public class LoopHandler implements Runnable {
   protected class LoopRange {

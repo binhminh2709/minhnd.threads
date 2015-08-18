@@ -1,11 +1,11 @@
-package com.minhnd.ch05.example3;
+package ch05.example3;
 
 import java.awt.*;
 import java.awt.event.*;
 
 import javax.swing.*;
 
-import com.minhnd.ch05.*;
+import ch05.*;
 
 public class SwingTypeTester extends JFrame implements CharacterSource {
   

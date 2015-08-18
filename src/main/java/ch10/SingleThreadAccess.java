@@ -1,4 +1,4 @@
-package com.minhnd.ch10;
+package ch10;
 
 import java.util.concurrent.*;
 import java.io.*;

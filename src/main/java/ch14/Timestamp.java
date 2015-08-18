@@ -1,4 +1,4 @@
-package com.minhnd.ch14;
+package ch14;
 
 import java.util.concurrent.*;
 

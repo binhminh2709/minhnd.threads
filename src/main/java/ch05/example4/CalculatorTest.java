@@ -1,4 +1,4 @@
-package com.minhnd.ch05.example4;
+package ch05.example4;
 
 public class CalculatorTest extends Calculator implements Runnable {
   

@@ -1,4 +1,4 @@
-package com.minhnd.ch11;
+package ch11;
 
 public class CharacterEvent {
   public CharacterSource source;

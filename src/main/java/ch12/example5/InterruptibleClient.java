@@ -1,9 +1,9 @@
-package com.minhnd.ch12.example5;
+package ch12.example5;
 
 import java.net.*;
 import java.io.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 public class InterruptibleClient extends InterruptibleReader {
   

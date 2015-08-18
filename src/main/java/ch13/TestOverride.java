@@ -1,4 +1,4 @@
-package com.minhnd.ch13;
+package ch13;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.minhnd.ch06;
+package ch06;
 
 public class DeadlockDetectedException extends RuntimeException {
   

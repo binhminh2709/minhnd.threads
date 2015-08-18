@@ -1,4 +1,4 @@
-package com.minhnd.ch12.example3;
+package ch12.example3;
 
 import java.io.*;
 import java.nio.*;
@@ -7,7 +7,7 @@ import java.nio.charset.*;
 import java.net.*;
 import java.util.*;
 
-import com.minhnd.ch12.*;
+import ch12.*;
 
 public class TypeServer extends TCPNIOServer {
   static String testString = "Thisisateststring";

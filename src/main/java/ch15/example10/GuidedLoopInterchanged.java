@@ -1,6 +1,6 @@
-package com.minhnd.ch15.example10;
+package ch15.example10;
 
-import com.minhnd.ch15.*;
+import ch15.*;
 
 public class GuidedLoopInterchanged implements ScaleTester {
   private float lookupValues[][];

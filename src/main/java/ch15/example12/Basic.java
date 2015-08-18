@@ -1,6 +1,6 @@
-package com.minhnd.ch15.example12;
+package ch15.example12;
 
-import com.minhnd.ch15.*;
+import ch15.*;
 
 public class Basic implements ScaleTester {
   private float lookupValues[][];

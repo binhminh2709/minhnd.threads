@@ -1,6 +1,6 @@
-package com.minhnd.ch15.example6;
+package ch15.example6;
 
-import com.minhnd.ch15.*;
+import ch15.*;
 
 public class SinTable extends GuidedLoopHandler {
   private float lookupValues[];

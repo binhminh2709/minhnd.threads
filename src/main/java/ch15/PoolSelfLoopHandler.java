@@ -1,4 +1,4 @@
-package com.minhnd.ch15;
+package ch15;
 
 public class PoolSelfLoopHandler extends PoolLoopHandler {
   private int groupSize;
