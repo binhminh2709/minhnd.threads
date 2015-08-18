@@ -29,7 +29,8 @@
 
 package appa;
 
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Vector;
 
 class RWNode {
   static final int READER = 0;

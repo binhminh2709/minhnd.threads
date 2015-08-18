@@ -4,7 +4,7 @@ import java.util.*;
 
 import ch02.*;
 
-public class RandomCharacterGenerator implements CharacterSource, Runnable {
+public class RandomCharacterGenerator implements ICharacterSource, Runnable {
   static char[] chars;
   static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
   static {
@@ -25,11 +25,11 @@ public class RandomCharacterGenerator implements CharacterSource, Runnable {
     return (int) (Math.max(1000, 5000 * random.nextDouble()));
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   

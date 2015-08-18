@@ -12,12 +12,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import ch02.CharacterDisplayCanvas;
+import ch02.CharacterDisplayCanvasImpl;
 import ch02.CharacterEventHandler;
-import ch02.CharacterListener;
-import ch02.CharacterSource;
+import ch02.ICharacterListener;
+import ch02.ICharacterSource;
 
-public class SwingTypeTester extends JFrame implements CharacterSource {
+public class SwingTypeTester extends JFrame implements ICharacterSource {
   
   /**
 	 * 
@@ -25,7 +25,7 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
   private static final long serialVersionUID = -3422487377989612404L;
   protected RandomCharacterGenerator producer;
   private AnimatedCharacterDisplayCanvas displayCanvas;
-  private CharacterDisplayCanvas feedbackCanvas;
+  private CharacterDisplayCanvasImpl feedbackCanvas;
   private JButton quitButton;
   private JButton startButton;
   private JButton stopButton;
@@ -38,7 +38,7 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
   private void initComponents() {
     handler = new CharacterEventHandler();
     displayCanvas = new AnimatedCharacterDisplayCanvas();
-    feedbackCanvas = new CharacterDisplayCanvas(this);
+    feedbackCanvas = new CharacterDisplayCanvasImpl(this);
     quitButton = new JButton("Quit");
     startButton = new JButton("Start");
     stopButton = new JButton("Stop");
@@ -100,11 +100,11 @@ public class SwingTypeTester extends JFrame implements CharacterSource {
     System.exit(0);
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   

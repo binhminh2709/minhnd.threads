@@ -2,10 +2,10 @@ package ch02;
 
 public class CharacterEvent {
   
-  public CharacterSource source;
+  public ICharacterSource source;
   public int character;
   
-  public CharacterEvent(CharacterSource cs, int c) {
+  public CharacterEvent(ICharacterSource cs, int c) {
     source = cs;
     character = c;
   }

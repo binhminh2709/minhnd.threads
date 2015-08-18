@@ -29,7 +29,9 @@
 
 package appa;
 
-import java.util.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Vector;
 
 public class JobScheduler implements Runnable {
   

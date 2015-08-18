@@ -3,10 +3,10 @@ package ch02.example3;
 import java.util.Random;
 
 import ch02.CharacterEventHandler;
-import ch02.CharacterListener;
-import ch02.CharacterSource;
+import ch02.ICharacterListener;
+import ch02.ICharacterSource;
 
-public class RandomCharacterGenerator extends Thread implements CharacterSource {
+public class RandomCharacterGenerator extends Thread implements ICharacterSource {
   static char[] chars;
   static String charArray = "abcdefghijklmnopqrstuvwxyz0123456789";
   static {
@@ -27,11 +27,11 @@ public class RandomCharacterGenerator extends Thread implements CharacterSource 
     return (int) (Math.max(1000, 5000 * random.nextDouble()));
   }
   
-  public void addCharacterListener(CharacterListener cl) {
+  public void addCharacterListener(ICharacterListener cl) {
     handler.addCharacterListener(cl);
   }
   
-  public void removeCharacterListener(CharacterListener cl) {
+  public void removeCharacterListener(ICharacterListener cl) {
     handler.removeCharacterListener(cl);
   }
   
