@@ -32,19 +32,7 @@ package base.appa;
 import java.util.Enumeration;
 import java.util.Vector;
 
-class RWNode {
-    static final int READER = 0;
-    static final int WRITER = 1;
-    Thread t;
-    int state;
-    int nAcquires;
 
-    RWNode(Thread t, int state) {
-        this.t = t;
-        this.state = state;
-        nAcquires = 0;
-    }
-}
 
 public class RWLock {
     private Vector waiters;
@@ -127,6 +115,20 @@ public class RWLock {
         if (node.nAcquires == 0) {
             waiters.removeElementAt(index);
             notifyAll();
+        }
+    }
+
+    class RWNode {
+        static final int READER = 0;
+        static final int WRITER = 1;
+        Thread t;
+        int state;
+        int nAcquires;
+
+        RWNode(Thread t, int state) {
+            this.t = t;
+            this.state = state;
+            nAcquires = 0;
         }
     }
 }
