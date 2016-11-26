@@ -1,4 +1,6 @@
-package journaldev.base.wait;
+package journaldev.wait;
+
+import journaldev.Message;
 
 /**
  * Created by binhminh on 11/26/16.

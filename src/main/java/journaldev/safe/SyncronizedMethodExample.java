@@ -1,4 +1,4 @@
-package journaldev.base.safe;
+package journaldev.safe;
 
 import java.util.Arrays;
 

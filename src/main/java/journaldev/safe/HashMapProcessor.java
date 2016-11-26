@@ -1,4 +1,4 @@
-package journaldev.base.safe;
+package journaldev.safe;
 
 /**
  * Created by binhminh on 11/26/2016.
